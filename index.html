@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		*{
+			font-family: cursive;
+		}
+		body{
+			background-color:orange;			
+			text-align: center;
+		}
+		h1{
+			color: black;
+			display: inline-block;
+			padding: 10px;
+		}
+		button{
+			border:none;
+			padding:15px;
+			border-radius: 15px;			
+		}
+		.main{
+			position: relative;
+			top: 250px;
+		}
+	</style>
+	<div class="main">
+	<div>
+		<h1>Stop Watch</h1>
+	</div>
+	<div>
+		<h1 id="minute">0</h1>
+		<h1 id="second">0</h1>
+		<h1 id="millisecond">0</h1>
+	</div>
+	<div>
+		<button id="start" onclick="start()">Start</button>
+		<button id="pause" onclick="stop()">Stop</button>
+		<button onclick="reset()" type="reset">Reset</button>
+	</div>
+	
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
